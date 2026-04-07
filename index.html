@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Migration Helper - Your trusted companion for international relocation. Currency converter, language phrases, timezone info, and country guides." />
+  <title>Migration Helper - International Relocation Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="index.html" aria-label="Migration Helper home">
+        <img src="images/logo.png" alt="Migration Helper logo" class="logo-image" />
+      </a>
+    </div>
+    
+    <nav class="header-nav-left" aria-label="Main navigation">
+      <a href="index.html" target="_self" aria-label="Home page">Home</a>
+      <a href="about.html" target="_self" aria-label="About us page">About Us</a>
+      <a href="faq.html" target="_self" aria-label="Frequently asked questions">FAQ</a>
+    </nav>
+    
+    <div class="header-center">
+      <a href="index.html" style="text-decoration:none" aria-label="Migration Helper home">
+        <h1>Migration Helper</h1>
+      </a>
+    </div>
+    
+    <div class="header-spacer"></div>
+  </header>
+
+  <div class="clock-carousel" role="region" aria-label="World time zones">
+    <div class="clock-carousel-track" id="world-clock" aria-live="polite"></div>
+  </div>
+
+  <main class="container" role="main">
+    <section class="phrases" aria-labelledby="language-heading">
+      <h2 id="language-heading">Quick Language Cheat Sheet</h2>
+      <div class="table-wrap-centered">
+        <table id="phrases-table" role="table" aria-label="Common phrases in multiple languages">
+          <thead>
+            <tr>
+              <th scope="col">English</th>
+              <th scope="col">Hindi (India)</th>
+              <th scope="col">French (Canada)</th>
+              <th scope="col">Spanish (USA)</th>
+              <th scope="col">Trinidad Creole</th>
+              <th scope="col">Bahasa Indonesia</th>
+              <th scope="col">Vietnamese</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Hello</td><td>नमस्ते</td><td>Bonjour</td><td>Hola</td><td>Hello</td><td>Halo</td><td>Xin chào</td></tr>
+            <tr><td>Thank you</td><td>धन्यवाद</td><td>Merci</td><td>Gracias</td><td>Thanks</td><td>Terima kasih</td><td>Cảm ơn</td></tr>
+            <tr><td>Please</td><td>कृपया</td><td>S'il vous plaît</td><td>Por favor</td><td>Please</td><td>Tolong</td><td>Làm ơn</td></tr>
+            <tr><td>Excuse me</td><td>माफ़ कीजिए</td><td>Excusez-moi</td><td>Disculpe</td><td>'Scuse me</td><td>Permisi</td><td>Xin lỗi</td></tr>
+            <tr><td>Where is…?</td><td>... कहाँ है?</td><td>Où est...?</td><td>¿Dónde está...?</td><td>Where is...?</td><td>Di mana...?</td><td>... ở đâu?</td></tr>
+            <tr><td>How much?</td><td>कितना है?</td><td>Combien?</td><td>¿Cuánto cuesta?</td><td>How much?</td><td>Berapa harganya?</td><td>Bao nhiêu?</td></tr>
+            <tr><td>I don't understand</td><td>मुझे समझ नहीं आया</td><td>Je ne comprends pas</td><td>No entiendo</td><td>I doh understand</td><td>Saya tidak mengerti</td><td>Tôi không hiểu</td></tr>
+            <tr class="hidden-row"><td>Help!</td><td>मदद करें!</td><td>Au secours!</td><td>¡Ayuda!</td><td>Help!</td><td>Tolong!</td><td>Giúp tôi!</td></tr>
+            <tr class="hidden-row"><td>Yes</td><td>हाँ</td><td>Oui</td><td>Sí</td><td>Yes</td><td>Ya</td><td>Có</td></tr>
+            <tr class="hidden-row"><td>No</td><td>नहीं</td><td>Non</td><td>No</td><td>No</td><td>Tidak</td><td>Không</td></tr>
+            <tr class="hidden-row"><td>Good morning</td><td>शुभ प्रभात</td><td>Bonjour</td><td>Buenos días</td><td>Good morning</td><td>Selamat pagi</td><td>Chào buổi sáng</td></tr>
+            <tr class="hidden-row"><td>Good night</td><td>शुभ रात्रि</td><td>Bonne nuit</td><td>Buenas noches</td><td>Good night</td><td>Selamat malam</td><td>Chúc ngủ ngon</td></tr>
+            <tr class="hidden-row"><td>Toilet</td><td>शौचालय</td><td>Toilettes</td><td>Baño</td><td>Bathroom</td><td>Toilet</td><td>Nhà vệ sinh</td></tr>
+            <tr class="hidden-row"><td>Water</td><td>पानी</td><td>Eau</td><td>Agua</td><td>Water</td><td>Air</td><td>Nước</td></tr>
+            <tr class="hidden-row"><td>Food</td><td>खाना</td><td>Nourriture</td><td>Comida</td><td>Food</td><td>Makanan</td><td>Thức ăn</td></tr>
+            <tr class="hidden-row"><td>Hospital</td><td>अस्पताल</td><td>Hôpital</td><td>Hospital</td><td>Hospital</td><td>Rumah sakit</td><td>Bệnh viện</td></tr>
+            <tr class="hidden-row"><td>Police</td><td>पुलिस</td><td>Police</td><td>Policía</td><td>Police</td><td>Polisi</td><td>Cảnh sát</td></tr>
+            <tr class="hidden-row"><td>Taxi</td><td>टैक्सी</td><td>Taxi</td><td>Taxi</td><td>Taxi</td><td>Taksi</td><td>Taxi</td></tr>
+            <tr class="hidden-row"><td>Phone</td><td>फ़ोन</td><td>Téléphone</td><td>Teléfono</td><td>Phone</td><td>Telepon</td><td>Điện thoại</td></tr>
+            <tr class="hidden-row"><td>Address</td><td>पता</td><td>Adresse</td><td>Dirección</td><td>Address</td><td>Alamat</td><td>Địa chỉ</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="load-more-container">
+        <button id="loadMoreBtn" class="load-more-btn" aria-label="Show more phrases">Load More Phrases ▼</button>
+      </div>
+    </section>
+
+    <section class="converter" aria-labelledby="converter-heading">
+      <h2 id="converter-heading">Currency Converter</h2>
+      <form class="converter-form" onsubmit="return false;">
+        <div class="converter-row">
+          <div class="input-group">
+            <label for="amountA" class="visually-hidden">Amount to convert</label>
+            <input id="amountA" type="text" inputmode="decimal" placeholder="Amount" aria-describedby="amountError" />
+            <label for="currencyA" class="visually-hidden">From currency</label>
+            <select id="currencyA" aria-label="Select source currency">
+            <option value="USD">USD — United States</option>
+            <option value="CAD">CAD — Canada</option>
+            <option value="INR">INR — India</option>
+            <option value="TTD">TTD — Trinidad</option>
+            <option value="COP">COP — Colombia</option>
+            <option value="IDR">IDR — Indonesia</option>
+            <option value="VND">VND — Vietnam</option>
+          </select>
+        </div>
+
+        <button id="swapBtn" type="button" title="Swap currencies" aria-label="Swap source and target currencies">⇄</button>
+
+        <div class="input-group">
+          <label for="amountB" class="visually-hidden">Converted amount</label>
+          <input id="amountB" type="text" inputmode="decimal" placeholder="Amount" readonly aria-readonly="true" />
+          <label for="currencyB" class="visually-hidden">To currency</label>
+          <select id="currencyB" aria-label="Select target currency">
+            <option value="CAD">CAD — Canada</option>
+            <option value="USD">USD — United States</option>
+            <option value="INR">INR — India</option>
+            <option value="TTD">TTD — Trinidad</option>
+            <option value="COP">COP — Colombia</option>
+            <option value="IDR">IDR — Indonesia</option>
+            <option value="VND">VND — Vietnam</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="converter-meta" role="status" aria-live="polite">
+        <div class="result-line" id="resultLine"></div>
+        <div class="rate-info" id="rateInfo"></div>
+      </div>
+
+      <div class="validation">
+        <small id="amountError" class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="converter-actions">
+        <button id="convertBtn" type="button" disabled aria-label="Convert currency">Convert</button>
+      </div>
+      </form>
+    </section>
+
+    <section class="plugs" aria-labelledby="plugs-heading">
+      <h2 id="plugs-heading">Plugs · Voltage · Country Codes</h2>
+      <div class="gallery" id="plugGallery" role="list"></div>
+    </section>
+  </main>
+
+  <div class="premium-cta" role="region" aria-labelledby="premium-cta-heading">
+    <h3 id="premium-cta-heading" class="visually-hidden">Premium Features</h3>
+    <a href="premium.html" class="premium-button" aria-label="Learn more about premium features">Get Premium ✨</a>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div>Copyright © 2025 PRANAV RUPANI</div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="privacy.html" aria-label="Privacy policy">Privacy Policy</a>
+      <a href="terms.html" aria-label="Terms of service">Terms of Service</a>
+    </nav>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
